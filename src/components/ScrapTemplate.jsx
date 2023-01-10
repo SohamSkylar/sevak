@@ -64,7 +64,7 @@ const ScrapTemplate = () => {
 
         <div className="header">
           <div className="logo">
-            <img src='./images/sevak-high-resolution-logo-color-on-transparent-background.png' height={50}/>
+            <img src='./images/sevak-high-resolution-logo-color-on-transparent-background.png' height={100}/>
           </div>
           <div className="header-menu">
             <a href="#" className="active">
