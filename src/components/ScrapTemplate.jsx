@@ -121,10 +121,10 @@ const ScrapTemplate = () => {
             </div>
             <img
               className="user-profile"
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+              src=".\images\img1.jpg"
               alt=""
             />
-            <div className="user-name">Suhayel Nasim</div>
+            <div className="user-name">Debartha Chakraborty</div>
           </div>
         </div>
 
@@ -344,7 +344,8 @@ const ScrapTemplate = () => {
               <div className="job-cards">
                 <div className="job-card">
                   <div className="job-card-header">
-                    <img src="./images/driver.jpeg"/>
+                    {/* add border radius in img  */}
+                    <img src="./images/driver.jpeg" className="verified"/>
                     <div className="menu-dot"></div>
                   </div>
                   <div className="job-card-title">Driver</div>
@@ -372,9 +373,11 @@ const ScrapTemplate = () => {
                     </button>
                   </div>
                 </div>
+
+          
                 <div className="job-card">
                   <div className="job-card-header">
-                    <img src="./images/laundry.jpeg"/>
+                    <img src="./images/laundry.jpeg" className="verified"/>
                     <div className="menu-dot"></div>
                   </div>
                   <div className="job-card-title">Laundry</div>
@@ -402,10 +405,11 @@ const ScrapTemplate = () => {
                     </button>
                   </div>
                 </div>
+
+
                 <div className="job-card">
                   <div className="job-card-header">
-                    <img src = "./images/maidTest.jpeg"/>
-                    <div className="menu-dot"></div>
+                    <img src = "./images/maidTest.jpeg" className="verified"/>
                   </div>
                   <div className="job-card-title">Household Help</div>
                   <div className="job-card-title">Female, 35</div>
@@ -432,10 +436,11 @@ const ScrapTemplate = () => {
                     </button>
                   </div>
                 </div>
+
+
                 <div className="job-card">
                   <div className="job-card-header">
-                    <img src = "./images/electrician.jpg"/>
-                    <div className="menu-dot"></div>
+                    <img src = "./images/electrician.jpg" className="verified"/>
                   </div>
                   <div className="job-card-title">Electrician</div>
                   <div className="job-card-title">Male, 39</div>
@@ -462,10 +467,11 @@ const ScrapTemplate = () => {
                     </button>
                   </div>
                 </div>
+
+
                 <div className="job-card">
                   <div className="job-card-header">
-                    <img src = "/images/garden.jpg"/>
-                    <div className="menu-dot"></div>
+                    <img src = "/images/garden.jpg" className="verified"/>
                   </div>
                   <div className="job-card-title">Gardening</div>
                   <div className="job-card-title">Female, 29</div>
@@ -492,10 +498,11 @@ const ScrapTemplate = () => {
                     </button>
                   </div>
                 </div>
+
+
                 <div className="job-card">
                   <div className="job-card-header">
-                    <img src="./images/maid1.jpeg"/>
-                    <div className="menu-dot"></div>
+                    <img src="./images/maid1.jpeg" className="verified"/>
                   </div>
                   <div className="job-card-title">Household Help</div>
                   <div className="job-card-title">Male, 33</div>
