@@ -111,7 +111,7 @@ const ScrapTemplate = () => {
 
         {/* -------------- search bar ------------ */}
         <div className="wrapper">
-          <div class="search-menu">
+          <div className="search-menu">
             <div className="search-bar">
               <input type="text" className="search-box" autoFocus />
               <div className="search item">
