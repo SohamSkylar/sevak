@@ -64,6 +64,10 @@ body {
   font-size: 15px;
   color: var(--body-color);
 }
+.custom-images{
+  border: 1px;
+  border-radius: 10px;
+}
 
 .dark-light svg {
   margin-right: 8px;
