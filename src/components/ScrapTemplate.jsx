@@ -50,13 +50,13 @@ const ScrapTemplate = () => {
   const header = document.querySelector(".header");
   const [isContainerActive, setIsContainerActive] = React.useState(false);
 
-  if(wrapper){
-  wrapper.addEventListener('scroll', (e) => {
-    e.target.scrollTop > 30
-      ? setIsContainerActive(true)
-      : setIsContainerActive(false);
-  });
-}
+  if (wrapper) {
+    wrapper.addEventListener("scroll", (e) => {
+      e.target.scrollTop > 30
+        ? setIsContainerActive(true)
+        : setIsContainerActive(false);
+    });
+  }
   return (
     <>
       <div className="job">
@@ -131,114 +131,115 @@ const ScrapTemplate = () => {
 
         {/* -------------- search bar ------------ */}
         <div className="wrapper">
-          <div className="search-bar">
-            <input type="text" className="search-box" autoFocus />
-            <div className="search item">
-              Product Designer
+          <div class="search-menu">
+            <div className="search-bar">
+              <input type="text" className="search-box" autoFocus />
+              <div className="search item">
+                Product Designer
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="feather feather-x"
+                >
+                  <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+              </div>
+              <div className="search item">
+                UI Designer
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="feather feather-x"
+                >
+                  <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+              </div>
+            </div>
+
+            {/* -------------- search-location ------------ */}
+
+            <div className="search-location">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="3"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="feather feather-x"
+                className="feather feather-map-pin"
               >
-                <path d="M18 6L6 18M6 6l12 12" />
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
               </svg>
+              Londontowne, MD
             </div>
-            <div className="search item">
-              UI Designer
+
+            {/* -------------- search-job ------------ */}
+
+            <div className="search-job">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="3"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="feather feather-x"
+                className="feather feather-briefcase"
               >
-                <path d="M18 6L6 18M6 6l12 12" />
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
               </svg>
+              <input type="text" placeholder="Job Type" />
             </div>
-          </div>
 
-          {/* -------------- search-location ------------ */}
+            {/* -------------- search-salary ------------ */}
 
-          <div className="search-location">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="feather feather-map-pin"
-            >
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
-            Londontowne, MD
-          </div>
-
-          {/* -------------- search-job ------------ */}
-
-          <div className="search-job">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="feather feather-briefcase"
-            >
-              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
-            </svg>
-            <input type="text" placeholder="Job Type" />
-          </div>
-
-          {/* -------------- search-salary ------------ */}
-
-          <div className="search-salary">
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              stroke="currentColor"
-              fill="currentColor"
-              strokeWidth=".4"
-            >
-              <path
-                d="M12.6 18H9.8a.8.8 0 010-1.5h2.8a.9.9 0 000-1.8h-1.2a2.4 2.4 0 010-4.7h2.8a.8.8 0 010 1.5h-2.8a.9.9 0 000 1.8h1.2a2.4 2.4 0 010 4.7z"
+            <div className="search-salary">
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
                 stroke="currentColor"
-              />
-              <path
-                d="M12 20a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8zM12 11.5a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8z"
-                stroke="currentColor"
-              />
-              <path
-                d="M21.3 23H2.6A2.8 2.8 0 010 20.2V3.9C0 2.1 1.2 1 2.8 1h18.4C22.9 1 24 2.2 24 3.8v16.4c0 1.6-1.2 2.8-2.8 2.8zM2.6 2.5c-.6 0-1.2.6-1.2 1.3v16.4c0 .7.6 1.3 1.3 1.3h18.4c.7 0 1.3-.6 1.3-1.3V3.9c0-.7-.6-1.3-1.3-1.3z"
-                stroke="currentColor"
-              />
-              <path
-                d="M23.3 6H.6a.8.8 0 010-1.5h22.6a.8.8 0 010 1.5z"
-                stroke="currentColor"
-              />
-            </svg>
-            <input type="text" placeholder="Salary Range" />
+                fill="currentColor"
+                strokeWidth=".4"
+              >
+                <path
+                  d="M12.6 18H9.8a.8.8 0 010-1.5h2.8a.9.9 0 000-1.8h-1.2a2.4 2.4 0 010-4.7h2.8a.8.8 0 010 1.5h-2.8a.9.9 0 000 1.8h1.2a2.4 2.4 0 010 4.7z"
+                  stroke="currentColor"
+                />
+                <path
+                  d="M12 20a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8zM12 11.5a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8z"
+                  stroke="currentColor"
+                />
+                <path
+                  d="M21.3 23H2.6A2.8 2.8 0 010 20.2V3.9C0 2.1 1.2 1 2.8 1h18.4C22.9 1 24 2.2 24 3.8v16.4c0 1.6-1.2 2.8-2.8 2.8zM2.6 2.5c-.6 0-1.2.6-1.2 1.3v16.4c0 .7.6 1.3 1.3 1.3h18.4c.7 0 1.3-.6 1.3-1.3V3.9c0-.7-.6-1.3-1.3-1.3z"
+                  stroke="currentColor"
+                />
+                <path
+                  d="M23.3 6H.6a.8.8 0 010-1.5h22.6a.8.8 0 010 1.5z"
+                  stroke="currentColor"
+                />
+              </svg>
+              <input type="text" placeholder="Salary Range" />
+            </div>
+
+            {/* -------------- search-button ------------ */}
+
+            <button className="search-button">Find Job</button>
+
+            {/* -------------- main-container ------------ */}
           </div>
-
-          {/* -------------- search-button ------------ */}
-
-          <button className="search-button">Find Job</button>
-
-          {/* -------------- main-container ------------ */}
-
           <div className="main-container">
             <div className="search-type">
               <div className="alert">
@@ -253,11 +254,7 @@ const ScrapTemplate = () => {
                 <div className="job-time-title">Type of Employment</div>
                 <div className="job-wrapper">
                   <div className="type-container">
-                    <input
-                      type="checkbox"
-                      id="job1"
-                      className="job-style"
-                    />
+                    <input type="checkbox" id="job1" className="job-style" />
                     <label htmlFor="job1">Full Time Jobs</label>
                     <span className="job-number">56</span>
                   </div>
@@ -302,22 +299,12 @@ const ScrapTemplate = () => {
                     <span className="job-number">44</span>
                   </div>
                   <div className="type-container">
-                    <input
-                      type="checkbox"
-                      id="job9"
-                      className="job-style"
-                      
-                    />
+                    <input type="checkbox" id="job9" className="job-style" />
                     <label htmlFor="job9">Mid Level</label>
                     <span className="job-number">35</span>
                   </div>
                   <div className="type-container">
-                    <input
-                      type="checkbox"
-                      id="job10"
-                      className="job-style"
-                      
-                    />
+                    <input type="checkbox" id="job10" className="job-style" />
                     <label htmlFor="job10">Senior Level</label>
                     <span className="job-number">29</span>
                   </div>
@@ -357,22 +344,12 @@ const ScrapTemplate = () => {
                     <span className="job-number">27</span>
                   </div>
                   <div className="type-container">
-                    <input
-                      type="checkbox"
-                      id="job5"
-                      className="job-style"
-                      
-                    />
+                    <input type="checkbox" id="job5" className="job-style" />
                     <label htmlFor="job5">$2000 - $3000</label>
                     <span className="job-number">76</span>
                   </div>
                   <div className="type-container">
-                    <input
-                      type="checkbox"
-                      id="job6"
-                      className="job-style"
-                      
-                    />
+                    <input type="checkbox" id="job6" className="job-style" />
                     <label htmlFor="job6">$3000 - $4000</label>
                     <span className="job-number">22</span>
                   </div>
@@ -811,7 +788,9 @@ const ScrapTemplate = () => {
                       </svg>
                     </div>
                     <div className="job-overview-buttons">
-                      <div className="search-buttons time-button">Full Time</div>
+                      <div className="search-buttons time-button">
+                        Full Time
+                      </div>
                       <div className="search-buttons level-button">
                         Senior Level
                       </div>
@@ -842,7 +821,9 @@ const ScrapTemplate = () => {
                         />
                       </svg>
                       <div className="overview-detail">
-                        <div className="job-card-title">Sr. Product Designer</div>
+                        <div className="job-card-title">
+                          Sr. Product Designer
+                        </div>
                         <div className="job-card-subtitle">
                           1901 Thornridge Cir.Shiloh, Hawaii.
                         </div>
@@ -861,7 +842,9 @@ const ScrapTemplate = () => {
                       </svg>
                     </div>
                     <div className="job-overview-buttons">
-                      <div className="search-buttons time-button">Full Time</div>
+                      <div className="search-buttons time-button">
+                        Full Time
+                      </div>
                       <div className="search-buttons level-button">
                         Senior Level
                       </div>
@@ -903,7 +886,9 @@ const ScrapTemplate = () => {
                       </svg>
                     </div>
                     <div className="job-overview-buttons">
-                      <div className="search-buttons time-button">Full Time</div>
+                      <div className="search-buttons time-button">
+                        Full Time
+                      </div>
                       <div className="search-buttons level-button">
                         Senior Level
                       </div>
@@ -943,7 +928,9 @@ const ScrapTemplate = () => {
                       </svg>
                     </div>
                     <div className="job-overview-buttons">
-                      <div className="search-buttons time-button">Full Time</div>
+                      <div className="search-buttons time-button">
+                        Full Time
+                      </div>
                       <div className="search-buttons level-button">
                         Senior Level
                       </div>
@@ -983,7 +970,9 @@ const ScrapTemplate = () => {
                       </svg>
                     </div>
                     <div className="job-overview-buttons">
-                      <div className="search-buttons time-button">Full Time</div>
+                      <div className="search-buttons time-button">
+                        Full Time
+                      </div>
                       <div className="search-buttons level-button">
                         Senior Level
                       </div>
@@ -1025,7 +1014,9 @@ const ScrapTemplate = () => {
                       </svg>
                     </div>
                     <div className="job-overview-buttons">
-                      <div className="search-buttons time-button">Full Time</div>
+                      <div className="search-buttons time-button">
+                        Full Time
+                      </div>
                       <div className="search-buttons level-button">
                         Senior Level
                       </div>
@@ -1069,7 +1060,9 @@ const ScrapTemplate = () => {
                       </svg>
                     </div>
                     <div className="job-overview-buttons">
-                      <div className="search-buttons time-button">Full Time</div>
+                      <div className="search-buttons time-button">
+                        Full Time
+                      </div>
                       <div className="search-buttons level-button">
                         Senior Level
                       </div>
@@ -1109,7 +1102,9 @@ const ScrapTemplate = () => {
                       </svg>
                     </div>
                     <div className="job-overview-buttons">
-                      <div className="search-buttons time-button">Full Time</div>
+                      <div className="search-buttons time-button">
+                        Full Time
+                      </div>
                       <div className="search-buttons level-button">
                         Senior Level
                       </div>
@@ -1162,7 +1157,9 @@ const ScrapTemplate = () => {
                       </svg>
                     </div>
                     <div className="job-overview-buttons">
-                      <div className="search-buttons time-button">Full Time</div>
+                      <div className="search-buttons time-button">
+                        Full Time
+                      </div>
                       <div className="search-buttons level-button">
                         Senior Level
                       </div>
