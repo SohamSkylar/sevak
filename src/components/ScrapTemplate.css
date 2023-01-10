@@ -342,6 +342,10 @@ body {
   margin-top: 14px;
 }
 
+.verified{
+  border-radius: 10px;
+}
+
 .job-wrapper {
   padding-top: 20px;
 }
