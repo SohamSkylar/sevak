@@ -344,42 +344,28 @@ const ScrapTemplate = () => {
               <div className="job-cards">
                 <div className="job-card">
                   <div className="job-card-header">
-                    <svg
-                      viewBox="0 -13 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                      //   style="background-color:#2e2882"
-                    >
-                      <g fill="#feb0a5">
-                        <path d="M256 92.5l127.7 91.6L512 92 383.7 0 256 91.5 128.3 0 0 92l128.3 92zm0 0M256 275.9l-127.7-91.5L0 276.4l128.3 92L256 277l127.7 91.5 128.3-92-128.3-92zm0 0" />
-                        <path d="M127.7 394.1l128.4 92 128.3-92-128.3-92zm0 0" />
-                      </g>
-                      <path
-                        d="M512 92L383.7 0 256 91.5v1l127.7 91.6zm0 0M512 276.4l-128.3-92L256 275.9v1l127.7 91.5zm0 0M256 486.1l128.4-92-128.3-92zm0 0"
-                        fill="#feb0a5"
-                      />
-                    </svg>
+                    <img src="./images/driver.jpeg"/>
                     <div className="menu-dot"></div>
                   </div>
-                  <div className="job-card-title">UI / UX Designer</div>
+                  <div className="job-card-title">Driver</div>
+                  <div className="job-card-title">Male, 32</div>
                   <div className="job-card-subtitle">
-                    The User Experience Designer position exists to create
-                    compelling and digital user experience through excellent
-                    design...
+                    4-wheeler, SUV, Trucks
                   </div>
                   <div className="job-detail-buttons">
                     <button className="search-buttons detail-button">
-                      Full Time
+                      Hourly
                     </button>
                     <button className="search-buttons detail-button">
-                      Min. 1 Year
+                      7 years
                     </button>
                     <button className="search-buttons detail-button">
-                      Senior Level
+                      4.0
                     </button>
                   </div>
                   <div className="job-card-buttons">
                     <button className="search-buttons card-buttons">
-                      Apply Now
+                      View Profile
                     </button>
                     <button className="search-buttons card-buttons-msg">
                       Messages
@@ -550,38 +536,28 @@ const ScrapTemplate = () => {
                 </div>
                 <div className="job-card">
                   <div className="job-card-header">
-                    <svg
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      //     style="background-color: #fe5b5f"
-                    >
-                      <path
-                        d="M12 20.6c-1.4 1.5-3.1 3-5.1 3.3-2 .8-5.9-1.3-5.9-5 0-2.5 3.2-8 6.6-15.1C8.5 1.9 9.4 0 12 0c2.6 0 3.5 1.8 4.6 4C23 17 23 17.7 23 19c0 4.4-5.5 8-11 1.7zm9.5-1.7c0-2-6.4-14.4-6.5-14.5-.9-1.9-1.4-2.9-3-2.9-1.8 0-2.3 1.5-3.2 3.2C2.5 17.2 2.5 18 2.5 19c0 3 3.7 6 8.5.6-2-2.6-3-4.8-3-6.6 0-2.7 2-4.2 4-4.2s4 1.5 4 4.2c0 1.8-1 4-3 6.6 4.6 5.2 8.5 2.5 8.5-.6zM12 10.2c-1.2 0-2.5.9-2.5 2.7 0 1.4.9 3.3 2.5 5.4 1.6-2.1 2.5-4 2.5-5.4 0-1.8-1.3-2.7-2.5-2.7z"
-                        fill="#fff"
-                      />
-                    </svg>
+                    <img src="./images/maid1.jpeg"/>
                     <div className="menu-dot"></div>
                   </div>
-                  <div className="job-card-title">UI Developer</div>
+                  <div className="job-card-title">Household Help</div>
+                  <div className="job-card-title">Male, 33</div>
                   <div className="job-card-subtitle">
-                    The User Experience Designer position exists to create
-                    compelling and digital user experience through excellent
-                    design...
+                    Home Cleaning, Cooking, Laundry, etc. 
                   </div>
                   <div className="job-detail-buttons">
                     <button className="search-buttons detail-button">
                       Full Time
                     </button>
                     <button className="search-buttons detail-button">
-                      Min. 1 Year
+                      7 years
                     </button>
                     <button className="search-buttons detail-button">
-                      Senior Level
+                      4.5
                     </button>
                   </div>
                   <div className="job-card-buttons">
                     <button className="search-buttons card-buttons">
-                      Apply Now
+                       View Profile
                     </button>
                     <button className="search-buttons card-buttons-msg">
                       Messages
