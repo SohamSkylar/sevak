@@ -87,10 +87,10 @@ const ScrapTemplate = () => {
           </div>
           <div className="header-menu">
             <a href="#" className="active">
-              Find Job
+              Find Services
             </a>
-            <a href="#">Company Review</a>
-            <a href="#">Find Salaries</a>
+            <a href="#">Customer Review</a>
+            <a href="#">Customer Support</a>
           </div>
           <div className="user-settings">
             <div className="dark-light" onClick={toggleButtonMode}>
