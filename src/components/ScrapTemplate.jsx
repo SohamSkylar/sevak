@@ -1,5 +1,6 @@
 import React from "react";
 import "./ScrapTemplate.css";
+import { useRef } from "react";
 
 // wrapper.addEventListener("scroll", (e) => {
 //   e.target.scrollTop > 30
@@ -45,18 +46,33 @@ import "./ScrapTemplate.css";
 //   jobBg.style.background = bg;
 // });
 
-const ScrapTemplate = () => {
-  const wrapper = document.querySelector(".wrapper");
-  const header = document.querySelector(".header");
-  const [isContainerActive, setIsContainerActive] = React.useState(false);
+// const toggleButton = document.querySelector(".dark-light");
 
-  if (wrapper) {
-    wrapper.addEventListener("scroll", (e) => {
-      e.target.scrollTop > 30
-        ? setIsContainerActive(true)
-        : setIsContainerActive(false);
-    });
-  }
+// if (toggleButton) {
+//   toggleButton.addEventListener("click", () => {
+//     document.body.classList.toggle("dark-mode");
+//   });
+// }else{
+//     console.log('null');
+// }
+
+// const wrapper = document.querySelector(".wrapper");
+// const header = document.querySelector(".header");
+
+// if (wrapper) {
+//   wrapper.addEventListener("scroll", (e) => {
+//     e.target.scrollTop > 30
+//       ? header.classList.add("header-shadow")
+//       : header.classList.remove("header-shadow");
+//   });
+// }
+
+const ScrapTemplate = () => {
+
+    const toggleButtonMode = () => {
+        document.body.classList.toggle("dark-mode");
+    }
+
   return (
     <>
       <div className="job">
@@ -64,7 +80,10 @@ const ScrapTemplate = () => {
 
         <div className="header">
           <div className="logo">
-            <img src='./images/sevak-high-resolution-logo-color-on-transparent-background.png' height={100}/>
+            <img
+              src="./images/sevak-high-resolution-logo-color-on-transparent-background.png"
+              height={100}
+            />
           </div>
           <div className="header-menu">
             <a href="#" className="active">
@@ -74,7 +93,7 @@ const ScrapTemplate = () => {
             <a href="#">Find Salaries</a>
           </div>
           <div className="user-settings">
-            <div className="dark-light">
+            <div className="dark-light" onClick={toggleButtonMode}>
               <svg
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -114,7 +133,7 @@ const ScrapTemplate = () => {
           <div className="search-menu">
             <div className="search-bar">
               <input type="text" className="search-box" autoFocus />
-              <div className="search item">
+              {/* <div className="search item">
                 Product Designer
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +162,7 @@ const ScrapTemplate = () => {
                 >
                   <path d="M18 6L6 18M6 6l12 12" />
                 </svg>
-              </div>
+              </div> */}
             </div>
 
             {/* -------------- search-location ------------ */}
